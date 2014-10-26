@@ -1,4 +1,4 @@
-#
+# Data set can be downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 # Please set your working directory here where the downloaded data set has been extracted.
 # setwd ( "CHANGE_THIS!" )
