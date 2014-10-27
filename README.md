@@ -14,6 +14,7 @@ Here are the steps to recreate the tidy_data.txt.
 
 1. Load run_analysis.R in R. 
 2. Use setwd() to change your working directory to where the downloaded data set has been extracted.
-3. In the R console pane, enter 'source("run_analysis.R")'
-4. The R script will run and generate the tidy_data.txt in the working directory. This file contains the cleaned result set per the project's requirements.
+3. This R script requires the plyr package. If plyr is not installed, use install.package ("plyr") to obtain the library.
+4. In the R console pane, enter 'source("run_analysis.R")'
+5. The R script will run and generate the tidy_data.txt in the working directory. This file contains the cleaned result set per the project's requirements.
 
