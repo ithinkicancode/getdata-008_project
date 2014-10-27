@@ -12,5 +12,7 @@ The steps required to produce the cleaned data set are as follows:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 mean() and std() standard for mean and standard deviation of the variable, respectively.
 
-For steps 1-4, first we build a data frame combining the subject IDs and activity IDs from both training and test data sets (under the train and test subdirectories of the downloaded data). We use join to replace the activity IDs with the descriptive activity names from activity_labels.txt file.
+For steps 1-4, first we build a data frame combining the subject IDs and activity IDs from both training and test data sets (under the train and test subdirectories of the downloaded data). We use join to replace the activity IDs with the descriptive activity names from activity_labels.txt file. Next, we build a data frame containing all the measurements that are means and standard deviations. We also updated this data frame's column names with the proper measurement names from features.txt file.
+
+For steps 4-5, we calculate the average of each variable (measurement) for each activity and each subject via colMeans in R. Finally we merge the first data frame with the measurement average data frame to form one result set. And we generate the tidy_data.txt file with this result set.
 
